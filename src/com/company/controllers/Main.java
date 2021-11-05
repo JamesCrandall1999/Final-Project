@@ -13,7 +13,7 @@ public class Main {
 
         LoadMovieList LoadMovies = new LoadMovieList();
         SaveMovieList SaveMovies = new SaveMovieList();
-        Movie[] movies = new Movie;
+        Movie[] movies = new Movie[0];
 
        view = new UserView();
        choice = view.startMenu();

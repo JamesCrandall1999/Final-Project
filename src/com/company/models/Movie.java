@@ -1,25 +1,38 @@
 package com.company.models;
 
 public class Movie {
-    private int imdbNumber;
+    private String imdbNumber;
     private String title;
-    private int year;
+    private String year;
     private String mpaaRating;
     private String runLength;
     private String genre;
     private String dateAdded;
-    private boolean wasWatched;
-    private String[] previousDatesWatched;
+    private String wasWatched;
+    private String previousDateWatched;
     private String youtubeLink;
     private String rottentomatoesLink;
 
 
+    public Movie(String imdbNumber, String title, String year, String mpaaRating, String runLength, String genre, String dateAdded, String wasWatched, String previousDateWatched, String youtubeLink, String rottentomatoesLink) {
+        this.imdbNumber = imdbNumber;
+        this.title = title;
+        this.year = year;
+        this.mpaaRating = mpaaRating;
+        this.runLength = runLength;
+        this.genre = genre;
+        this.dateAdded = dateAdded;
+        this.wasWatched = wasWatched;
+        this.previousDateWatched = previousDateWatched;
+        this.youtubeLink = youtubeLink;
+        this.rottentomatoesLink = rottentomatoesLink;
+    }
 
-    public int getImdbNumber() {
+    public String getImdbNumber() {
         return imdbNumber;
     }
 
-    public void setImdbNumber(int imdbNumber) {
+    public void setImdbNumber(String imdbNumber) {
         this.imdbNumber = imdbNumber;
     }
 
@@ -31,11 +44,11 @@ public class Movie {
         this.title = title;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
@@ -71,20 +84,20 @@ public class Movie {
         this.dateAdded = dateAdded;
     }
 
-    public boolean isWasWatched() {
+    public String isWasWatched() {
         return wasWatched;
     }
 
-    public void setWasWatched(boolean wasWatched) {
+    public void setWasWatched(String wasWatched) {
         this.wasWatched = wasWatched;
     }
 
-    public String[] getPreviousDatesWatched() {
-        return previousDatesWatched;
+    public String getPreviousDatesWatched() {
+        return previousDateWatched;
     }
 
-    public void setPreviousDatesWatched(String[] previousDatesWatched) {
-        this.previousDatesWatched = previousDatesWatched;
+    public void setPreviousDatesWatched(String previousDateWatched) {
+        this.previousDateWatched = previousDateWatched;
     }
 
     public String getYoutubeLink() {
